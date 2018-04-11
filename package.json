@@ -48,7 +48,7 @@
     "bodymen": "^1.0.3",
     "compression": "^1.7.1",
     "cors": "^2.8.4",
-    "express": "^4.16.2",
+    "express": "^4.16.3",
     "mongoose": "^4.12.4",
     "mongoose-create-unique": "^0.4.4",
     "mongoose-keywords": "^0.3.2",
