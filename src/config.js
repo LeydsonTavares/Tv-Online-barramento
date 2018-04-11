@@ -3,9 +3,6 @@ import path from 'path'
 
 /* istanbul ignore next */
 const requireProcessEnv = (name) => {
-  if (!process.env[name]) {
-    throw new Error('You must set the ' + name + ' environment variable')
-  }
   return process.env[name]
 }
 
@@ -33,7 +30,7 @@ const config = {
         }
       }
     }
-  },
+},
   test: {
     mongo: {
       uri: 'mongodb://localhost/tv-online-app-test',
@@ -54,7 +51,8 @@ const config = {
     ip: process.env.IP || undefined,
     port: process.env.PORT || 8080,
     mongo: {
-      uri: process.env.MONGODB_URI || 'mongodb://localhost/tv-online-app'
+      uri: process.env.MONGODB_URI || 'mongodb://localhost/tv-online-app',
+      options: {}
     }
   }
 }
